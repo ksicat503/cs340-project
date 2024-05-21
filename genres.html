@@ -13,8 +13,6 @@
         <th>genreName</th>
         <th>genreID</th>
         <th>description</th>
-        <th>genreAuthorListID</th>
-        <th>genreBookListID</th>
         <th></th>
         <th></th>
     </tr>
@@ -23,11 +21,57 @@
         <td></td>
         <td></td>
         <td></td>
-        <td><a href="genres_authors_list.html">Should link to a list of authors seperate page(?)</a></td>
-        <td><a href="genres_authors_list.html">Should link to a list of books seperate page(?)</a></td>
         <td><button>Edit</button></td>
         <td><button>Delete</button></td>
     </tr>
 </table>
 <br>
 <button>Add New</button>
+
+<br><br>
+
+<div id="insert" style="display: block">
+    <form id="addGenre">
+        <legend><strong>Add Genre</strong></legend>
+          <fieldset class="fields">
+            <!-- <label> authorID </label> <input type="text" name="authorID">
+            <br> -->
+            <label> genreName </label> <input type="text" name="genreName">
+            <br>
+            <label> description </label> <input type="text" name="description">
+          </fieldset>
+          <input class="btn" type="submit" id="addGenre" value="Add Genre">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateGenre">
+      <legend><strong>Update Genre</strong></legend>
+      <fieldset class="fields">
+        <!-- <label> authorID </label> <input type="text" name="authorID">
+        <br> -->
+        <label>genreID: </label>
+        <br>
+        <label> genreName </label> <input type="text" name="genreName">
+        <br>
+        <label> description </label> <input type="text" name="description">
+      </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveGenre" value="Save Genre">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteGenre">
+      <legend><strong>Delete Genre</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 
+          <label> Genre Title </label> 
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteGenre" value="Delete Genre">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->

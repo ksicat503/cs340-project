@@ -9,18 +9,14 @@
 [ <a href="customers.html">Customers</a> | <a href="books.html">Books</a> | <a href="authors.html">Authors</a> | <a href="employees.html">Employees</a> | <a href="orders.html">Orders</a> | <a href="genres.html">Genres</a> ]
 
 <table border="1" cellpadding="5">
-    <tr>
+    <tr>        
+        <th>authorID</th>
         <th>lastName</th>
         <th>firstName</th>
-        <th>authorID</th>
-        <th>genres</th>
-        <th>booksAvailable</th>
         <th></th>
         <th></th>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -30,3 +26,53 @@
 </table>
 <br>
 <button>Add New</button>
+
+<br>
+<br>
+
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addAuthor">
+        <legend><strong>Add Author</strong></legend>
+          <fieldset class="fields">
+            <!-- <label> authorID </label> <input type="text" name="authorID">
+            <br> -->
+            <label> lastName </label> <input type="text" name="lastName">
+            <br>
+            <label> firstName </label> <input type="text" name="firstName">
+            
+          </fieldset>
+          <input class="btn" type="submit" id="addAuthor" value="Add an Author">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateAuthor">
+      <legend><strong>Update Author</strong></legend>
+          <fieldset class="fields">
+            <label> authorID: </label> <input type="text" name="authorID">
+            <br>
+            <label> lastName </label> <input type="text" name="lastname">
+            <br>
+            <label> firstName </label> <input type="text"  name="firstpopulation" >
+            <br>
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveAuthor" value="Save Author">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteAuthor">
+      <legend><strong>Delete Author</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 
+          <label> Name </label> 
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteAuthor" value="Delete Author">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->

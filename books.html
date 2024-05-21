@@ -11,20 +11,12 @@
 <table border="1" cellpadding="5">
     <tr>
         <th>bookTitle</th>
-        <th>authorLastName</th>
-        <th>authorID</th>
         <th>bookID</th>
         <th>ISBN</th>
-        <th>genre</th>
-        <th>genreID</th>
         <th></th>
         <th></th>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -34,3 +26,48 @@
 </table>
 <br>
 <button>Add New</button>
+
+<div id="insert" style="display: block">
+    <form id="addBook">
+        <legend><strong>Add Book</strong></legend>
+          <fieldset class="fields">
+            <!-- <label> authorID </label> <input type="text" name="authorID">
+            <br> -->
+            <label> bookTitle </label> <input type="text" name="bookTitle">
+            <br>
+            <label> ISBN </label> <input type="text" name="ISBN">
+          </fieldset>
+          <input class="btn" type="submit" id="addAuthor" value="Add Book">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateBook">
+      <legend><strong>Update Book</strong></legend>
+          <fieldset class="fields">
+            <label> bookID: </label> <input type="text" name="bookID">
+            <br>
+            <label> bookTitle </label> <input type="text" name="bookTitle">
+            <br>
+            <label> ISBN</label> <input type="text"  name="ISBN" >
+            <br>
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveBook" value="Save Book">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteBook">
+      <legend><strong>Delete Book</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 
+          <label> Book Title </label> 
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteAuthor" value="Delete Book">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->

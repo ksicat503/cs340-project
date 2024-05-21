@@ -7,13 +7,31 @@
 <!-- Delete this line once backend and stuff start working -->
 <p>This page will display the following information in the future</p>
 <ul>
+    <li><strong>OrderSpecificsID</strong></li>
     <li><strong>Order ID: </strong>x</li>
-    <li><strong>Customer ID: </strong>x</li>
-    <li><strong>Book Titles: </strong></li>
-    <li><strong>Book IDs: </strong></li>
-    <li><strong>ISBNs: </strong></li>
+    <li><strong>Book ID: </strong></li>
     <li><strong>Employee ID: </strong></li>
     <li><strong>Price: </strong></li>
     <li><strong>Status: </strong></li>
 </ul>
 </html>
+
+<div id="update" style="display: block">
+    <form id="updateOrder">
+        <legend><strong>Update the Specifications of this Order</strong></legend>
+            <fieldset class="fields">
+              <label> orderSpecificsID</label> <input type="text" name="orderSpecificsID">
+              <label> OrderID</label> <input type="text" name="OrderID">
+              <br>
+              <label> bookID </label> <input type="text" name="bookID">
+              <br>
+              <label>employeeID</label> <input type="text" name="employeeID">
+              <br>
+              <label>price</label> <input text="text" name="price">
+              <br>
+              <label>status</label> <input text="text" name="status">
+      </fieldset>
+      <input class="btn" type="submit" id="UpdateSaveOrderSpec" value="Save Order Specifications">
+            <input class="btn" type="button" value="cancel" >
+    </form> 
+  </div><!-- update -->

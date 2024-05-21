@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Employeees</title>
+        <title>Orders</title>
     </head>
 </html>
 
-<h1>Employees</h1>
+<h1>Orders</h1>
 
 [ <a href="customers.html">Customers</a> | <a href="books.html">Books</a> | <a href="authors.html">Authors</a> | <a href="employees.html">Employees</a> | <a href="orders.html">Orders</a> | <a href="genres.html">Genres</a> ]
 
@@ -13,7 +13,6 @@
         <th>orderID</th>
         <th>customerID</th>
         <th>quantity</th>
-        <th>orderSpecificsID</th>
         <th></th>
         <th></th>
     </tr>
@@ -21,10 +20,61 @@
         <td></td>
         <td></td>
         <td></td>
-        <td><a href="orders_specifics.html">should link to orderSpecificsID</a></td>
         <td><button>Edit</button></td>
         <td><button>Delete</button></td>
     </tr>
 </table>
 <br>
 <button>Add New</button>
+
+<br>
+<br>
+
+<div id="insert" style="display: block">
+    <form id="addOrder">
+        <legend><strong>Add Order</strong></legend>
+          <fieldset class="fields">
+            <!-- <label> authorID </label> <input type="text" name="authorID">
+            <br> -->
+            <label> customerID </label> <input type="text" name="customerID">
+            <br>
+            <label>quantity</label> <input text="text" name="quantity">
+            <br>
+          </fieldset>
+          <input class="btn" type="submit" id="addOrders" value="Add an Order">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new planet-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateOrder">
+      <legend><strong>Update Order</strong></legend>
+          <fieldset class="fields">
+            <label>orderID: </label> <input type="text" name="orderID">
+            <br>
+            <label> customerID </label> <input type="text" name="customerID">
+            <br>
+            <label>quantity</label> <input text="text" name="quantity">
+            <br>
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveORder" value="Save Order">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteOrder">
+      <legend><strong>Delete Order</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>orderID:</label> 
+          <br>
+          <label> customerID</label> 
+          <br>
+          <label>quantity</label>
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteOrder" value="Delete Order">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
